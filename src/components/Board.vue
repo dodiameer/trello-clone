@@ -7,7 +7,7 @@ export default defineComponent({
   props: {
     tasks: {
       required: true,
-      type: Object,
+      type: Array,
     },
   },
   components: {
@@ -19,7 +19,7 @@ export default defineComponent({
 <template>
   <section>
     <draggable
-      :list="tasks.value"
+      :list="tasks"
       group="tasks"
       @change="$emit('change')"
       @start="drag = true"

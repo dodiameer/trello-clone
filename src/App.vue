@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <board :tasks="firstTasks.tasks" @delete="e => handleDelete(firstTasks, e)">
+    <board :tasks="firstTasks.tasks.value" @delete="e => handleDelete(firstTasks, e)">
       <template #header>To-do 💻</template>
     </board>
-    <board :tasks="secondTasks.tasks" @delete="e => handleDelete(secondTasks, e)">
+    <board :tasks="secondTasks.tasks.value" @delete="e => handleDelete(secondTasks, e)">
       <template #header>Doing ⚡</template>
     </board>
-    <board :tasks="thirdTasks.tasks" @delete="e => handleDelete(thirdTasks, e)">
+    <board :tasks="thirdTasks.tasks.value" @delete="e => handleDelete(thirdTasks, e)">
       <template #header>Done 🎉</template>
     </board>
     <form @submit.prevent="addTask(firstTasks)">
