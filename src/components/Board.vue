@@ -50,8 +50,13 @@ section {
 }
 ul {
   padding: 1rem;
+  height: 100%;
 }
 li {
   margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+li:last-of-type {
+  margin-bottom: none;
 }
 </style>

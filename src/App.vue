@@ -79,7 +79,7 @@ header.header {
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .form {
   display: flex;
@@ -90,6 +90,7 @@ header.header {
   width: 16rem;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 .form input {
   padding: 0.5rem 1rem;
