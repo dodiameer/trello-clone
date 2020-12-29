@@ -16,3 +16,22 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: none;
+  background: #2244dd;
+  color: white;
+  cursor: pointer;
+}
+.button:focus,
+.button:hover {
+  filter: brightness(1.25);
+}
+.button:focus {
+  outline: 2px dashed grey;
+}
+.button:active {
+  filter: brightness(0.85);
+}

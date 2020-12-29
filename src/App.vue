@@ -28,7 +28,7 @@
         New task:
         <input type="text" id="newTask" v-model.trim="newTask" />
       </label>
-      <button type="submit">Add task</button>
+      <button type="submit" class="button">Add task</button>
     </form>
   </div>
 </template>
@@ -103,23 +103,7 @@ header.header {
   filter: brightness(1.25);
   outline: 2px dashed grey;
 }
-.form button {
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  border: none;
-  background: #2244dd;
-  color: white;
+.form .button {
   width: 100%;
-  cursor: pointer;
-}
-.form button:focus,
-.form button:hover {
-  filter: brightness(1.25);
-}
-.form button:focus {
-  outline: 2px dashed grey;
-}
-.form button:active {
-  filter: brightness(0.85);
 }
 </style>
